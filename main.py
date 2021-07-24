@@ -28,7 +28,7 @@ User = Client(
 @Bot.on_message(filters.private & filters.command("start"))
 async def start_handler(_, event: Message):
     await event.reply_text(
-        "Hi, I am Messages Search Bot!\n\n"
+        "Hi, I am Messages Search Bot! for Heaven.\n\n"
         "**Developer:** @ALBUS_SERIOUS\n"
         "**Demo Bot:** NotAvailable",
         reply_markup=InlineKeyboardMarkup([
