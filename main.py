@@ -29,12 +29,12 @@ User = Client(
 async def start_handler(_, event: Message):
     await event.reply_text(
         "Hi, I am Messages Search Bot!\n\n"
-        "**Developer:** @AbirHasan2005\n"
-        "**Demo Bot:** @AHListBot",
+        "**Developer:** @ALBUS_SERIOUS\n"
+        "**Demo Bot:** notavailable",
         reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton("Support Group", url="https://t.me/DevsZone"),
-             InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")],
-            [InlineKeyboardButton("Developer - @AbirHasan2005")],
+            [InlineKeyboardButton("Support Group", url="https://t.me/RICHARDHP1"),
+             InlineKeyboardButton("Bots Channel", url="https://t.me/RICHARDHP1")],
+            [InlineKeyboardButton("Developer - @ALBUS_SERIOUS", url="https://t.me/ALBUS_SERIOUS")],
             [InlineKeyboardButton("Search Inline", switch_inline_query_current_chat=""), InlineKeyboardButton("Go Inline", switch_inline_query="")]
         ])
     )
@@ -51,14 +51,14 @@ async def inline_handlers(_, event: InlineQuery):
                 description="You can search Channel All Messages using this bot.",
                 input_message_content=InputTextMessageContent(
                     message_text="Using this Bot you can Search a Channel All Messages using this bot.\n\n"
-                                 "Made by @AbirHasan2005",
+                                 "Made by @ALBUS_SERIOUS",
                     disable_web_page_preview=True
                 ),
                 reply_markup=InlineKeyboardMarkup([
                     [InlineKeyboardButton("Search Here", switch_inline_query_current_chat="")],
-                    [InlineKeyboardButton("Support Group", url="https://t.me/DevsZone"),
-                     InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")],
-                    [InlineKeyboardButton("Developer - @AbirHasan2005", url="https://t.me/AbirHasan2005")]
+                    InlineKeyboardButton("Support Group", url="https://t.me/RICHARDHP1")],
+                    [InlineKeyboardButton("Bots Channel", url="https://t.me/RICHARDHP1")],
+                    [InlineKeyboardButton("Developer - @ALBUS_SERIOUS", url="https://t.me/ALBUS_SERIOUS")],
                 ])
             )
         )
